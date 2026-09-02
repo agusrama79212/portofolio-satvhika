@@ -1,0 +1,72 @@
+/* ==========================================================================
+   DESIGN TOKENS & TYPOGRAPHY
+   Satvhika — Digital Product Company
+   ========================================================================== */
+
+@import url('https://api.fontshare.com/v2/css?f[]=boska@400,401,500,501,700,701&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap');
+
+:root {
+  /* Colors - Dark Theme */
+  --bg-primary: #0a0a0a;
+  --bg-surface: #121212;
+  --bg-surface-elevated: #171717;
+  --bg-surface-hover: #1e1e1e;
+  --bg-card: #141414;
+  --bg-card-inner: #1c1c1c;
+
+  /* Colors - Light Theme Sections (Keahlian & Footer CTA) */
+  --bg-light: #f4f2ed;
+  --bg-light-surface: #ffffff;
+  --bg-light-muted: #ece9e2;
+  --text-light-primary: #0a0a0a;
+  --text-light-secondary: #575757;
+  --text-light-muted: #88857f;
+  --border-light: #d6d3cb;
+  --border-light-subtle: #e5e2db;
+
+  /* Text Colors - Dark Theme */
+  --text-primary: #f4f2ed;
+  --text-secondary: #969696;
+  --text-muted: #666666;
+  --text-ghost: #3a3a3a;
+
+  /* Accent Colors (Strict Monochrome Black & White) */
+  --accent-green: #ffffff;
+  --accent-green-glow: rgba(255, 255, 255, 0.25);
+  --accent-blue: #ffffff;
+  --accent-amber: #ffffff;
+
+  /* Borders & Dividers */
+  --border-primary: #2a2a2a;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.2);
+
+  /* Typography */
+  --font-serif: 'Boska', 'Times New Roman', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Spacing */
+  --container-max-width: 1360px;
+  --container-padding: clamp(1.25rem, 4vw, 3.5rem);
+  --section-spacing: clamp(4.5rem, 9vw, 8.5rem);
+  --grid-gap: clamp(1.25rem, 3vw, 2.5rem);
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 26px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 50px rgba(255, 255, 255, 0.03);
+}

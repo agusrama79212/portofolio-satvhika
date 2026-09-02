@@ -1,0 +1,538 @@
+/* ==========================================================================
+   MAIN STYLESHEET
+   Satvhika — Digital Product & SaaS Company
+   ========================================================================== */
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.5;
+    overflow-x: clip;
+    position: relative;
+    width: 100%;
+}
+
+/* Selection */
+::selection {
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+}
+
+/* Container */
+.container {
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    width: 100%;
+}
+
+/* --- Section Shared Styles --- */
+.section {
+    padding-top: var(--section-spacing);
+    padding-bottom: var(--section-spacing);
+    position: relative;
+}
+
+.section-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.section-heading-serif {
+    font-family: var(--font-serif);
+    font-size: clamp(2.2rem, 5.2vw, 4.4rem);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+/* --- Hero & Layanan Stage Container (Dual Mode 16:9 Desktop & 9:16 Mobile Canvas Sequence) --- */
+.hero-layanan-stage {
+    position: relative;
+    width: 100%;
+}
+
+.scroll-bg-canvas-wrap {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: clip;
+}
+
+#hero-scroll-canvas {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 0;
+    pointer-events: none;
+}
+
+#hero-scroll-canvas.loaded {
+    opacity: 0.52;
+}
+
+.canvas-vignette-scrim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 1;
+    pointer-events: none;
+    background: radial-gradient(circle at 50% 45%, rgba(10, 10, 10, 0.22) 0%, rgba(10, 10, 10, 0.7) 75%, rgba(10, 10, 10, 0.95) 100%),
+                linear-gradient(to bottom, rgba(10, 10, 10, 0.45) 0%, transparent 18%, transparent 80%, rgba(10, 10, 10, 0.98) 100%);
+}
+
+/* --- Hero Section (Full Viewport Screen 100dvh) --- */
+.hero-section {
+    padding-top: clamp(7.5rem, 14vw, 10.5rem);
+    padding-bottom: clamp(4.5rem, 8vw, 6.5rem);
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    background: transparent;
+}
+
+.layanan-section {
+    position: relative;
+    z-index: 2;
+    background: transparent;
+}
+
+.hero-section .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.hero-content-group {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-main-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.4rem, 5.8vw, 4.8rem);
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    color: var(--text-primary);
+    max-width: 1060px;
+    margin-bottom: 1.75rem;
+}
+
+.hero-location-subtitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.tag-pulse-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    opacity: 0.85;
+}
+
+.hero-cta-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-sub-pillars {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+/* --- 01 / Layanan Section --- */
+.layanan-section {
+    border-top: 1px solid var(--border-subtle);
+}
+
+.layanan-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.layanan-header .section-heading-serif {
+    max-width: 820px;
+}
+
+/* --- 02 / Karya Section --- */
+.karya-section {
+    border-top: 1px solid var(--border-subtle);
+}
+
+.karya-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin-bottom: 4.5rem;
+}
+
+.karya-header .section-tag {
+    align-self: flex-start;
+}
+
+.karya-header .section-heading-serif {
+    max-width: 650px;
+}
+
+/* --- 03 / Proses & SLA Section --- */
+.proses-section {
+    background-color: var(--bg-primary);
+    border-top: 1px solid var(--border-subtle);
+}
+
+.proses-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.proses-header .section-heading-serif {
+    max-width: 750px;
+}
+
+/* --- 04 / Skema Pembayaran (Light Theme) --- */
+.pembayaran-section {
+    background-color: var(--bg-light);
+    color: var(--text-light-primary);
+    padding-top: var(--section-spacing);
+    padding-bottom: var(--section-spacing);
+}
+
+.pembayaran-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.pembayaran-header .section-tag {
+    align-self: flex-start;
+    color: var(--text-light-muted);
+}
+
+.pembayaran-header .section-heading-serif {
+    color: var(--text-light-primary);
+    max-width: 750px;
+}
+
+/* --- 05 / Filosofi / Prinsip Section --- */
+.filosofi-section {
+    padding-top: clamp(5.5rem, 11vw, 9.5rem);
+    padding-bottom: clamp(5.5rem, 11vw, 9.5rem);
+    border-top: 1px solid var(--border-subtle);
+}
+
+.filosofi-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 2.25rem;
+    display: block;
+}
+
+.filosofi-quote {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 5vw, 4.4rem);
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    max-width: 1100px;
+    margin-bottom: 3.5rem;
+}
+
+.filosofi-footer-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* --- 06 / FAQ Section --- */
+.faq-section {
+    border-top: 1px solid var(--border-subtle);
+    padding-bottom: clamp(5.5rem, 9vw, 8.5rem);
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.faq-header .section-heading-serif {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- 07 / Mulai Proyek & Footer (Light Background) --- */
+.footer-section {
+    background-color: var(--bg-light);
+    color: var(--text-light-primary);
+    padding-top: clamp(4.5rem, 9vw, 8rem);
+    padding-bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-top-meta {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 2.75rem;
+    gap: 2rem;
+}
+
+.footer-section-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-light-muted);
+}
+
+.footer-sub-prompt {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--text-light-secondary);
+    max-width: 440px;
+}
+
+.footer-main-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.4rem, 5.6vw, 5rem);
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    color: var(--text-light-primary);
+    max-width: 950px;
+    margin-bottom: 2.75rem;
+}
+
+.footer-cta-container {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--border-light);
+    padding-top: 1.5rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-light-muted);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.live-time-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.live-time-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.45);
+    opacity: 0.7;
+}
+
+/* --- Scroll Reveal Animations --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+    transition-delay: 0.3s;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS (FULL SCREEN MOBILE RATIO HERO)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+    /* 100% Full Phone Screen Ratio (100dvh / 100vh) */
+    .hero-section {
+        min-height: 100vh;
+        min-height: 100dvh;
+        height: 100vh;
+        height: 100dvh;
+        padding-top: calc(64px + env(safe-area-inset-top, 0px) + 1.5rem);
+        padding-bottom: calc(2.25rem + env(safe-area-inset-bottom, 0px));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        background: transparent;
+    }
+
+    .hero-section .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    .hero-content-group {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 1rem 0;
+    }
+
+    .hero-main-title {
+        font-size: clamp(2.35rem, 8.8vw, 3.4rem);
+        line-height: 1.1;
+        margin-bottom: 1.25rem;
+    }
+
+    .hero-location-subtitle {
+        font-size: 0.72rem;
+        letter-spacing: 0.1em;
+    }
+
+    .hero-cta-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+        margin-top: 0;
+    }
+
+    .hero-cta-row .btn {
+        width: auto;
+        min-width: 175px;
+        padding: 0.9rem 1.75rem;
+    }
+
+    .karya-header,
+    .pembayaran-header {
+        align-items: flex-start;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+
+    .footer-top-meta,
+    .filosofi-footer-meta,
+    .footer-bottom-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .footer-cta-container {
+        width: 100%;
+    }
+
+    .footer-cta-container .btn {
+        width: 100%;
+    }
+}

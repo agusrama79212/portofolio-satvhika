@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Satvhika — Digital Product & SaaS Company</title>
+  <meta name="description" content="Perusahaan teknologi digital pembuat website, sistem SaaS, POS, E-Commerce, integrasi AI, dan undangan digital untuk UMKM, profesional, dan individu.">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Satvhika — Digital Product & SaaS Company">
+  <meta property="og:description" content="Teknologi digital canggih yang dapat diakses oleh semua kalangan. Solusi E-Commerce, POS, AI Integration, dan Undangan Digital.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Satvhika — Digital Product & SaaS Company">
+  <meta name="twitter:description" content="Teknologi digital canggih yang dapat diakses oleh semua kalangan. Solusi E-Commerce, POS, AI Integration, dan Undangan Digital.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-tokens.css?v=5.3">
+  <link rel="stylesheet" href="css/components.css?v=5.3">
+  <link rel="stylesheet" href="css/style.css?v=5.3">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo" id="nav-brand-logo">SATVHIKA</a>
+      
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" id="main-navigation" aria-label="Navigasi Utama">
+        <a href="#layanan" class="nav-link">Layanan</a>
+        <a href="#karya" class="nav-link">Karya</a>
+        <a href="#proses" class="nav-link">Proses & SLA</a>
+        <a href="#pembayaran" class="nav-link">Pembayaran</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="status-pill header-status-pill" title="Status Ketersediaan Studio & Layanan">
+          <span class="status-dot"></span>
+          <span>Tersedia untuk proyek</span>
+        </div>
+        
+        <!-- Animated Mobile Hamburger Button -->
+        <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Buka Menu Navigasi" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-line top"></span>
+            <span class="hamburger-line middle"></span>
+            <span class="hamburger-line bottom"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       FULLSCREEN LUXURY MOBILE NAVIGATION DRAWER
+       ========================================================================== -->
+  <div class="mobile-nav-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <a href="#" class="brand-logo mobile-drawer-brand">SATVHIKA</a>
+      <button class="mobile-drawer-close-btn" id="mobile-drawer-close" aria-label="Tutup Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-inner">
+      <nav class="mobile-nav-list" aria-label="Navigasi Mobile">
+        <a href="#layanan" class="mobile-nav-item">
+          <span class="mobile-nav-num">01</span>
+          <span class="mobile-nav-title">Layanan & Solusi</span>
+          <span class="mobile-nav-arrow">↗</span>
+        </a>
+        <a href="#karya" class="mobile-nav-item">
+          <span class="mobile-nav-num">02</span>
+          <span class="mobile-nav-title">Karya Terpilih</span>
+          <span class="mobile-nav-arrow">↗</span>
+        </a>
+        <a href="#proses" class="mobile-nav-item">
+          <span class="mobile-nav-num">03</span>
+          <span class="mobile-nav-title">Proses & SLA</span>
+          <span class="mobile-nav-arrow">↗</span>
+        </a>
+        <a href="#pembayaran" class="mobile-nav-item">
+          <span class="mobile-nav-num">04</span>
+          <span class="mobile-nav-title">Skema Pembayaran</span>
+          <span class="mobile-nav-arrow">↗</span>
+        </a>
+        <a href="#faq" class="mobile-nav-item">
+          <span class="mobile-nav-num">05</span>
+          <span class="mobile-nav-title">Tanya Jawab (FAQ)</span>
+          <span class="mobile-nav-arrow">↗</span>
+        </a>
+      </nav>
+
+      <div class="mobile-drawer-footer">
+        <div class="mobile-drawer-meta-row">
+          <div class="status-pill">
+            <span>Tersedia untuk proyek</span>
+          </div>
+          <div class="mobile-time-badge">
+            <span class="live-time-dot"></span>
+            <span id="mobile-bali-time">WITA / GMT+8</span>
+          </div>
+        </div>
+
+        <a href="mailto:hello@satvhika.com" class="btn btn-primary btn-full-mobile copy-email-action">
+          Mulai Percakapan
+          <span class="btn-icon">↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO & LAYANAN CONTAINER (SCROLL-DRIVEN 3D FRAME BACKGROUND 16:9 & 9:16)
+         ========================================================================== -->
+    <div class="hero-layanan-stage" id="hero-layanan-stage">
+      <!-- Scroll-Driven 3D Canvas Background (Frames 1-300: 16:9 Desktop & 9:16 Mobile) -->
+      <div class="scroll-bg-canvas-wrap" id="scroll-bg-canvas-wrap" aria-hidden="true">
+        <canvas id="hero-scroll-canvas" width="1280" height="720"></canvas>
+        <div class="canvas-vignette-scrim"></div>
+      </div>
+
+      <!-- ==========================================================================
+           HERO SECTION
+           ========================================================================== -->
+      <section class="hero-section" id="hero">
+      <div class="container">
+        
+        <!-- Hero Content Group (Hook Heading + Subtitle Below) -->
+        <div class="hero-content-group">
+          <h1 class="hero-main-title reveal">
+            Ubah cara kerja bisnis Anda menjadi lebih praktis dengan teknologi digital.
+          </h1>
+          <div class="hero-location-subtitle reveal reveal-delay-1">
+            <span class="hero-location-text">Perusahaan Produk Digital & SaaS / Bali — Indonesia</span>
+          </div>
+        </div>
+
+        <!-- Hero CTA & Pillars Row -->
+        <div class="hero-cta-row reveal reveal-delay-2">
+          <a href="mailto:hello@satvhika.com" class="btn btn-primary copy-email-action" id="hero-cta-btn">
+            Mulai percakapan
+            <span class="btn-icon">↗</span>
+          </a>
+          <div class="hero-sub-pillars">
+            E-COMMERCE & POS &nbsp;·&nbsp; SAAS & AI &nbsp;·&nbsp; DIGITAL INVITATION
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         01 / LAYANAN & SOLUSI DIGITAL (BENTO GRID)
+         ========================================================================== -->
+    <section class="section layanan-bento-section" id="layanan">
+      <div class="container">
+        
+        <div class="bento-header reveal">
+          <div class="bento-section-tag">
+            <span class="section-tag">01 / Layanan & Solusi</span>
+          </div>
+          <h2 class="bento-main-title">Enam pilar teknologi untuk setiap skala kebutuhan digital Anda.</h2>
+        </div>
+
+        <div class="bento-grid-container reveal reveal-delay-1">
+          
+          <!-- Card 1: E-Commerce (Span 2) -->
+          <a href="https://wa.me/6281238477771?text=Halo%20Satvhika,%20saya%20tertarik%20konsultasi%20layanan%20E-Commerce%20System" target="_blank" rel="noopener noreferrer" class="bento-card card-ecommerce">
+            <div class="bento-card-bg"></div>
+            <div class="bento-card-content">
+              <div class="bento-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              </div>
+              <h3 class="bento-title">E-Commerce System</h3>
+              <p class="bento-desc">Platform toko online mandiri berkecepatan tinggi tanpa komisi marketplace. 100% kendali brand dan margin keuntungan.</p>
+              <div class="bento-chips">
+                <span>Multi-Payment</span>
+                <span>Auto Invoice WA</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 2: POS (Span 1) -->
+          <a href="https://wa.me/6281238477771?text=Halo%20Satvhika,%20saya%20tertarik%20konsultasi%20layanan%20Point%20of%20Sales%20(POS)%20Cloud" target="_blank" rel="noopener noreferrer" class="bento-card card-pos">
+            <div class="bento-card-bg"></div>
+            <div class="bento-card-content">
+              <div class="bento-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+              </div>
+              <h3 class="bento-title">POS Cloud</h3>
+              <p class="bento-desc">Sistem kasir digital modern berbasis web cloud multi-device.</p>
+            </div>
+          </a>
+
+          <!-- Card 3: Monetisasi (Span 1) -->
+          <a href="https://wa.me/6281238477771?text=Halo%20Satvhika,%20saya%20tertarik%20konsultasi%20layanan%20Monetisasi%20Web%20%26%20SEO" target="_blank" rel="noopener noreferrer" class="bento-card card-monetisasi">
+            <div class="bento-card-bg"></div>
+            <div class="bento-card-content">
+              <div class="bento-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              </div>
+              <h3 class="bento-title">Web Monetisasi</h3>
+              <p class="bento-desc">Portal web berkecepatan tinggi yang dioptimalkan untuk AdSense & dominasi SEO.</p>
+            </div>
+          </a>
+
+          <!-- Card 4: AI Integration (Span 2) -->
+          <a href="https://wa.me/6281238477771?text=Halo%20Satvhika,%20saya%20tertarik%20konsultasi%20layanan%20AI%20Integration%20%26%20Otomasi" target="_blank" rel="noopener noreferrer" class="bento-card card-ai">
+            <div class="bento-card-bg"></div>
+            <div class="bento-card-content">
+              <div class="bento-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path><line x1="8" y1="16" x2="8" y2="16"></line><line x1="16" y1="16" x2="16" y2="16"></line></svg>
+              </div>
+              <h3 class="bento-title">AI Integration</h3>
+              <p class="bento-desc">Otomasi interaksi pelanggan 24/7 dan alur operasional bisnis dengan model AI cerdas untuk memangkas beban kerja manual.</p>
+              <div class="bento-chips">
+                <span>Sales Assistant</span>
+                <span>Data Analysis</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 5: Undangan Digital (Span 1.5) -->
+          <a href="https://wa.me/6281238477771?text=Halo%20Satvhika,%20saya%20tertarik%20pesan%20layanan%20Undangan%20Digital%20Sinematik" target="_blank" rel="noopener noreferrer" class="bento-card card-undangan">
+            <div class="bento-card-bg"></div>
+            <div class="bento-card-content">
+              <div class="bento-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <h3 class="bento-title">Undangan Digital</h3>
+              <p class="bento-desc">Undangan web interaktif mewah untuk pernikahan dengan Smart RSVP & Galeri HD.</p>
+            </div>
+          </a>
+
+          <!-- Card 6: Company Profile (Span 1.5) -->
+          <a href="https://wa.me/6281238477771?text=Halo%20Satvhika,%20saya%20tertarik%20konsultasi%20layanan%20Company%20Profile%20%26%20Portofolio" target="_blank" rel="noopener noreferrer" class="bento-card card-company">
+            <div class="bento-card-bg"></div>
+            <div class="bento-card-content">
+              <div class="bento-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <h3 class="bento-title">Company Profile</h3>
+              <p class="bento-desc">Etalase representasi digital kelas dunia untuk korporat, agensi, dan arsitek. Dilengkapi CMS mandiri & Direct Lead Generator.</p>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+    <!-- ==========================================================================
+         02 / KARYA TERPILIH (SELECTED WORKS)
+         ========================================================================== -->
+    <section class="section karya-section" id="karya">
+      <div class="container">
+        
+        <!-- Header -->
+        <div class="karya-header reveal">
+          <div>
+            <span class="section-tag">02 / Karya Terpilih & Studi Kasus</span>
+            <h2 class="section-heading-serif">
+              Bukti kerja nyata yang menyatukan fungsi, estetika, dan hasil bisnis.
+            </h2>
+          </div>
+          <p class="section-lead-narrow">
+            Setiap proyek dikerjakan dengan standar arsitektur bersih, performa tinggi, dan pengalaman visual yang berkesan bagi pengguna.
+          </p>
+        </div>
+
+        <!-- Swipe Hint (Desktop/Mobile) -->
+        <div class="carousel-hint reveal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span>Geser horizontal untuk melihat lebih banyak proyek</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+
+        <!-- Horizontal Carousel Portfolio -->
+        <div class="portfolio-carousel-container" id="portfolio-carousel">
+
+          <!-- Carousel Item 01: Latsu Canggu -->
+          <article class="carousel-item reveal">
+            <div class="carousel-content">
+              <span class="timeline-number" aria-hidden="true">01</span>
+              <div class="project-info">
+                <div class="project-meta-top">
+                  <span>Website F&B & Productive Sanctuary</span>
+                  <span>2026</span>
+                </div>
+                <h3 class="project-title">Latsu Canggu</h3>
+                <p class="project-desc">
+                  Representasi digital kelas dunia untuk coffee shop dan workspace produktif di jantung Shortcut Canggu, Bali — memadukan visual sinematik, storytelling editorial, dan katalog menu interaktif.
+                </p>
+                <button class="btn-link-action" data-case-study="latsu">
+                  <span>Lihat studi kasus & galeri</span>
+                  <span class="arrow">→</span>
+                </button>
+              </div>
+
+              <div class="project-gallery-window" data-case-study="latsu" style="cursor: pointer;" title="Klik untuk membuka studi kasus & galeri lengkap">
+                <div class="mockup-header-bar">
+                  <div class="mockup-dots">
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                  </div>
+                  <div class="mockup-url-pill">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <span>latsucanggu.com</span>
+                  </div>
+                  <span class="mockup-badge">GALERI 3 TAMPILAN</span>
+                </div>
+                <div class="gallery-showcase-stage">
+                  <img src="assets/projects/latsu/latsu-hero.png" alt="Latsu Canggu — Hero Section" class="gallery-main-img" id="latsu-main-img" loading="lazy">
+                  <div class="gallery-zoom-hint">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    <span>Buka Galeri Penuh</span>
+                  </div>
+                </div>
+                <div class="gallery-thumbnails-strip">
+                  <button class="gallery-thumb-item active" data-img-src="assets/projects/latsu/latsu-hero.png" data-img-alt="Latsu Canggu Hero Section" type="button">
+                    <img src="assets/projects/latsu/latsu-hero.png" alt="Hero Thumbnail">
+                    <span>01. Hero</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/latsu/latsu-story.png" data-img-alt="Latsu Canggu Story Sanctuary Section" type="button">
+                    <img src="assets/projects/latsu/latsu-story.png" alt="Story Thumbnail">
+                    <span>02. Story</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/latsu/latsu-menu.png" data-img-alt="Latsu Canggu Menu Section" type="button">
+                    <img src="assets/projects/latsu/latsu-menu.png" alt="Menu Thumbnail">
+                    <span>03. Menu</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Carousel Item 02: Lesstresso -->
+          <article class="carousel-item reveal">
+            <div class="carousel-content">
+              <span class="timeline-number" aria-hidden="true">02</span>
+              <div class="project-info">
+                <div class="project-meta-top">
+                  <span>Website F&B & Modern Coffee House</span>
+                  <span>2026</span>
+                </div>
+                <h3 class="project-title">Lesstresso</h3>
+                <p class="project-desc">
+                  Platform website modern & katalog signature menu untuk coffee house di Denpasar, Bali — dirancang dengan visual ramah, navigasi fasilitas lengkap, dan integrasi WhatsApp ordering.
+                </p>
+                <button class="btn-link-action" data-case-study="lesstresso">
+                  <span>Lihat studi kasus & galeri</span>
+                  <span class="arrow">→</span>
+                </button>
+              </div>
+
+              <div class="project-gallery-window" data-case-study="lesstresso" style="cursor: pointer;" title="Klik untuk membuka studi kasus & galeri lengkap">
+                <div class="mockup-header-bar">
+                  <div class="mockup-dots">
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                  </div>
+                  <div class="mockup-url-pill">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <span>lesstresso.com</span>
+                  </div>
+                  <span class="mockup-badge">GALERI 3 TAMPILAN</span>
+                </div>
+                <div class="gallery-showcase-stage">
+                  <img src="assets/projects/lesstresso/lesstresso-hero.png" alt="Lesstresso — Hero Section" class="gallery-main-img" id="lesstresso-main-img" loading="lazy">
+                  <div class="gallery-zoom-hint">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    <span>Buka Galeri Penuh</span>
+                  </div>
+                </div>
+                <div class="gallery-thumbnails-strip">
+                  <button class="gallery-thumb-item active" data-img-src="assets/projects/lesstresso/lesstresso-hero.png" data-img-alt="Lesstresso Hero Section" type="button">
+                    <img src="assets/projects/lesstresso/lesstresso-hero.png" alt="Hero Thumbnail">
+                    <span>01. Hero</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/lesstresso/lesstresso-about.png" data-img-alt="Lesstresso About & Facilities Section" type="button">
+                    <img src="assets/projects/lesstresso/lesstresso-about.png" alt="About Thumbnail">
+                    <span>02. About</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/lesstresso/lesstresso-menu.png" data-img-alt="Lesstresso Signature Menu Section" type="button">
+                    <img src="assets/projects/lesstresso/lesstresso-menu.png" alt="Menu Thumbnail">
+                    <span>03. Menu</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Carousel Item 03: The Wedding of Bagus & Ayu -->
+          <article class="carousel-item reveal">
+            <div class="carousel-content">
+              <span class="timeline-number" aria-hidden="true">03</span>
+              <div class="project-info">
+                <div class="project-meta-top">
+                  <span>Interactive Wedding Invitation</span>
+                  <span>2027</span>
+                </div>
+                <h3 class="project-title">The Wedding of Bagus & Ayu</h3>
+                <p class="project-desc">
+                  Undangan digital pawiwahan adat Bali yang sinematik dan interaktif — dilengkapi animasi card stack foto prewedding, countdown hari H, dudonan acara terintegrasi Google Maps, dan galeri prewedding bernuansa etnik modern.
+                </p>
+                <button class="btn-link-action" data-case-study="samudra">
+                  <span>Lihat galeri & ringkasan</span>
+                  <span class="arrow">→</span>
+                </button>
+              </div>
+
+              <div class="project-gallery-window" data-case-study="samudra" style="cursor: pointer;" title="Klik untuk membuka galeri lengkap">
+                <div class="mockup-header-bar">
+                  <div class="mockup-dots">
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                  </div>
+                  <span class="mockup-badge">GALERI 5 TAMPILAN</span>
+                </div>
+                <div class="gallery-showcase-stage">
+                  <img src="assets/projects/bagus-ayu/bagus-ayu-cover.png" alt="The Wedding of Bagus & Ayu — Cover Undangan" class="gallery-main-img" id="bagusayu-main-img" loading="lazy">
+                  <div class="gallery-zoom-hint">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    <span>Buka Galeri Penuh</span>
+                  </div>
+                </div>
+                <div class="gallery-thumbnails-strip five-items">
+                  <button class="gallery-thumb-item active" data-img-src="assets/projects/bagus-ayu/bagus-ayu-cover.png" data-img-alt="Cover & Buka Undangan" type="button">
+                    <img src="assets/projects/bagus-ayu/bagus-ayu-cover.png" alt="Cover Thumbnail">
+                    <span>01. Cover</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/bagus-ayu/bagus-ayu-story.jpg" data-img-alt="Animasi Card Stack Foto" type="button">
+                    <img src="assets/projects/bagus-ayu/bagus-ayu-story.jpg" alt="Story Thumbnail">
+                    <span>02. Card Stack</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/bagus-ayu/bagus-ayu-countdown.jpg" data-img-alt="Countdown Hari H & Mempelai" type="button">
+                    <img src="assets/projects/bagus-ayu/bagus-ayu-countdown.jpg" alt="Countdown Thumbnail">
+                    <span>03. Countdown</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/bagus-ayu/bagus-ayu-acara.png" data-img-alt="Dudonan Acara & Google Maps" type="button">
+                    <img src="assets/projects/bagus-ayu/bagus-ayu-acara.png" alt="Acara Thumbnail">
+                    <span>04. Acara & Map</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/bagus-ayu/bagus-ayu-gallery.png" data-img-alt="Galeri Prewedding" type="button">
+                    <img src="assets/projects/bagus-ayu/bagus-ayu-gallery.png" alt="Gallery Thumbnail">
+                    <span>05. Galeri</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Carousel Item 04: MicroTools -->
+          <article class="carousel-item reveal">
+            <div class="carousel-content">
+              <span class="timeline-number" aria-hidden="true">04</span>
+              <div class="project-info">
+                <div class="project-meta-top">
+                  <span>Client-Side SaaS & Web Utilities</span>
+                  <span>2026</span>
+                </div>
+                <h3 class="project-title">MicroTools</h3>
+                <p class="project-desc">
+                  Kumpulan utilitas web modern yang bekerja 100% di browser — proses perapian teks PDF, kompresi foto instan, QR generator, dan split PDF super cepat tanpa perlu upload ke server.
+                </p>
+                <button class="btn-link-action" data-case-study="loka">
+                  <span>Lihat studi kasus & galeri</span>
+                  <span class="arrow">→</span>
+                </button>
+              </div>
+
+              <div class="project-gallery-window" data-case-study="loka" style="cursor: pointer;" title="Klik untuk membuka galeri lengkap">
+                <div class="mockup-header-bar">
+                  <div class="mockup-dots">
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                  </div>
+                  <div class="mockup-url-pill">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <span>microtools.my.id</span>
+                  </div>
+                  <span class="mockup-badge">GALERI 5 TAMPILAN</span>
+                </div>
+                <div class="gallery-showcase-stage">
+                  <img src="assets/projects/microtools/microtools-hero.png" alt="MicroTools — Selesaikan Tugas Tanpa Antri Server" class="gallery-main-img" id="microtools-main-img" loading="lazy">
+                  <div class="gallery-zoom-hint">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    <span>Buka Galeri Penuh</span>
+                  </div>
+                </div>
+                <div class="gallery-thumbnails-strip five-items">
+                  <button class="gallery-thumb-item active" data-img-src="assets/projects/microtools/microtools-hero.png" data-img-alt="Hero & Tools Ecosystem" type="button">
+                    <img src="assets/projects/microtools/microtools-hero.png" alt="Hero Thumbnail">
+                    <span>01. Hero</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/microtools/microtools-pdf-cleaner.png" data-img-alt="Perapi Teks PDF" type="button">
+                    <img src="assets/projects/microtools/microtools-pdf-cleaner.png" alt="PDF Cleaner Thumbnail">
+                    <span>02. PDF Clean</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/microtools/microtools-compressor.png" data-img-alt="Kompresor Foto Instan" type="button">
+                    <img src="assets/projects/microtools/microtools-compressor.png" alt="Kompresor Thumbnail">
+                    <span>03. Kompres</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/microtools/microtools-qr.png" data-img-alt="QR Code Generator" type="button">
+                    <img src="assets/projects/microtools/microtools-qr.png" alt="QR Thumbnail">
+                    <span>04. QR Code</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/microtools/microtools-pdf-split.png" data-img-alt="Pisah (Split) PDF" type="button">
+                    <img src="assets/projects/microtools/microtools-pdf-split.png" alt="Split PDF Thumbnail">
+                    <span>05. Split PDF</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Carousel Item 05: AcademicTools -->
+          <article class="carousel-item reveal">
+            <div class="carousel-content">
+              <span class="timeline-number" aria-hidden="true">05</span>
+              <div class="project-info">
+                <div class="project-meta-top">
+                  <span>Interactive Academic Computing & SaaS</span>
+                  <span>2026</span>
+                </div>
+                <h3 class="project-title">AcademicTools</h3>
+                <p class="project-desc">
+                  Platform kalkulator akademik dan statistik penelitian interaktif untuk mahasiswa & peneliti — hitung skor SUS (ISO 9241), UEQ 26-item, UAT Skala Likert, dan Rumus Slovin instan dengan dukungan import Google Forms CSV.
+                </p>
+                <button class="btn-link-action" data-case-study="academictools">
+                  <span>Lihat studi kasus & galeri</span>
+                  <span class="arrow">→</span>
+                </button>
+              </div>
+
+              <div class="project-gallery-window" data-case-study="academictools" style="cursor: pointer;" title="Klik untuk membuka galeri lengkap">
+                <div class="mockup-header-bar">
+                  <div class="mockup-dots">
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                  </div>
+                  <div class="mockup-url-pill">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <span>academic.microtools.my.id</span>
+                  </div>
+                  <span class="mockup-badge">GALERI 5 TAMPILAN</span>
+                </div>
+                <div class="gallery-showcase-stage">
+                  <img src="assets/projects/academictools/academictools-hero.png" alt="AcademicTools — Kalkulator Akademik Untuk Mahasiswa" class="gallery-main-img" id="academictools-main-img" loading="lazy">
+                  <div class="gallery-zoom-hint">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    <span>Buka Galeri Penuh</span>
+                  </div>
+                </div>
+                <div class="gallery-thumbnails-strip five-items">
+                  <button class="gallery-thumb-item active" data-img-src="assets/projects/academictools/academictools-hero.png" data-img-alt="Kalkulator Akademik Hub" type="button">
+                    <img src="assets/projects/academictools/academictools-hero.png" alt="Hero Thumbnail">
+                    <span>01. Hub</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/academictools/academictools-sus.png" data-img-alt="Kalkulator SUS (ISO 9241)" type="button">
+                    <img src="assets/projects/academictools/academictools-sus.png" alt="SUS Thumbnail">
+                    <span>02. SUS</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/academictools/academictools-ueq.png" data-img-alt="Kalkulator UEQ 26 Item" type="button">
+                    <img src="assets/projects/academictools/academictools-ueq.png" alt="UEQ Thumbnail">
+                    <span>03. UEQ</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/academictools/academictools-uat.png" data-img-alt="Kalkulator UAT Likert" type="button">
+                    <img src="assets/projects/academictools/academictools-uat.png" alt="UAT Thumbnail">
+                    <span>04. UAT</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/academictools/academictools-slovin.png" data-img-alt="Rumus Slovin Sampling" type="button">
+                    <img src="assets/projects/academictools/academictools-slovin.png" alt="Slovin Thumbnail">
+                    <span>05. Slovin</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Carousel Item 06: Work Deck -->
+          <article class="carousel-item reveal">
+            <div class="carousel-content">
+              <span class="timeline-number" aria-hidden="true">06</span>
+              <div class="project-info">
+                <div class="project-meta-top">
+                  <span>Hardware Automation & Remote Dev SaaS</span>
+                  <span>2026</span>
+                </div>
+                <h3 class="project-title">Work Deck</h3>
+                <p class="project-desc">
+                  Sistem remote control laptop & virtual stream deck berbasis web yang mengubah smartphone menjadi kontroler produktivitas instan — kontrol kecerahan, volume, Discord shortcut, switch desktop, sesi terminal Antigravity CLI remote, dan pairing kilat via QR Code.
+                </p>
+                <button class="btn-link-action" data-case-study="workdeck">
+                  <span>Lihat studi kasus & galeri</span>
+                  <span class="arrow">→</span>
+                </button>
+              </div>
+
+              <div class="project-gallery-window" data-case-study="workdeck" style="cursor: pointer;" title="Klik untuk membuka galeri lengkap">
+                <div class="mockup-header-bar">
+                  <div class="mockup-dots">
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                  </div>
+                  <div class="mockup-url-pill">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <span>workdeck.local</span>
+                  </div>
+                  <span class="mockup-badge">GALERI 3 TAMPILAN</span>
+                </div>
+                <div class="gallery-showcase-stage">
+                  <img src="assets/projects/workdeck/workdeck-deck.jpg" alt="Work Deck — Mobile Stream Deck & Remote Controller" class="gallery-main-img" id="workdeck-main-img" loading="lazy">
+                  <div class="gallery-zoom-hint">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    <span>Buka Galeri Penuh</span>
+                  </div>
+                </div>
+                <div class="gallery-thumbnails-strip">
+                  <button class="gallery-thumb-item active" data-img-src="assets/projects/workdeck/workdeck-deck.jpg" data-img-alt="Stream Deck Mobile Controller" type="button">
+                    <img src="assets/projects/workdeck/workdeck-deck.jpg" alt="Deck Thumbnail">
+                    <span>01. Deck</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/workdeck/workdeck-qr.png" data-img-alt="QR Code Terminal Pairing" type="button">
+                    <img src="assets/projects/workdeck/workdeck-qr.png" alt="QR Thumbnail">
+                    <span>02. QR Pair</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/workdeck/workdeck-terminal.png" data-img-alt="Remote Antigravity Terminal" type="button">
+                    <img src="assets/projects/workdeck/workdeck-terminal.png" alt="Terminal Thumbnail">
+                    <span>03. Terminal</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Carousel Item 07: Satvikha Multi-Agent AI -->
+          <article class="carousel-item reveal">
+            <div class="carousel-content">
+              <span class="timeline-number" aria-hidden="true">07</span>
+              <div class="project-info">
+                <div class="project-meta-top">
+                  <span>AI Agent Platform & LLM Orchestration</span>
+                  <span>2026</span>
+                </div>
+                <h3 class="project-title">Satvikha Multi-Agent AI</h3>
+                <p class="project-desc">
+                  Platform manajemen chatbot AI multi-agent. Dilengkapi UI konfigurasi LLM, knowledge base, guardrails, tool-calling, serta integrasi instant API ke WhatsApp, Telegram, dan Website.
+                </p>
+                <button class="btn-link-action" data-case-study="satvikha_agent">
+                  <span>Lihat studi kasus & galeri</span>
+                  <span class="arrow">→</span>
+                </button>
+              </div>
+
+              <div class="project-gallery-window" data-case-study="satvikha_agent" style="cursor: pointer;" title="Klik untuk membuka studi kasus & galeri lengkap">
+                <div class="mockup-header-bar">
+                  <div class="mockup-dots">
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                    <span class="mockup-dot"></span>
+                  </div>
+                  <div class="mockup-url-pill">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <span>satvikha.com/agents</span>
+                  </div>
+                  <span class="mockup-badge">GALERI 4 TAMPILAN</span>
+                </div>
+                <div class="gallery-showcase-stage">
+                  <img src="assets/projects/satvikha-agent/satvikha-agent-hero.png" alt="Satvikha Agent — Hero Section" class="gallery-main-img" id="satvikha-agent-main-img" loading="lazy">
+                  <div class="gallery-zoom-hint">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    <span>Buka Galeri Penuh</span>
+                  </div>
+                </div>
+                <div class="gallery-thumbnails-strip">
+                  <button class="gallery-thumb-item active" data-img-src="assets/projects/satvikha-agent/satvikha-agent-hero.png" data-img-alt="Satvikha Agent Dashboard" type="button">
+                    <img src="assets/projects/satvikha-agent/satvikha-agent-hero.png" alt="Hero Thumbnail">
+                    <span>01. Home</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/satvikha-agent/satvikha-agent-settings.png" data-img-alt="LLM & Guardrails Settings" type="button">
+                    <img src="assets/projects/satvikha-agent/satvikha-agent-settings.png" alt="Settings Thumbnail">
+                    <span>02. Config</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/satvikha-agent/satvikha-agent-knowledge.png" data-img-alt="Knowledge Base Management" type="button">
+                    <img src="assets/projects/satvikha-agent/satvikha-agent-knowledge.png" alt="Knowledge Thumbnail">
+                    <span>03. Data</span>
+                  </button>
+                  <button class="gallery-thumb-item" data-img-src="assets/projects/satvikha-agent/satvikha-agent-playground.png" data-img-alt="Playground Interface" type="button">
+                    <img src="assets/projects/satvikha-agent/satvikha-agent-playground.png" alt="Playground Thumbnail">
+                    <span>04. Chat</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         03 / PROSES & GARANSI SLA (PROCESS & MAINTENANCE)
+         ========================================================================== -->
+    <section class="section proses-section" id="proses">
+      <div class="container">
+        
+        <!-- Header -->
+        <div class="proses-header reveal">
+          <span class="section-tag">03 / Proses Pengembangan & SLA</span>
+          <h2 class="section-heading-serif">
+            Alur pengembangan terstruktur dengan jaminan keandalan sistem.
+          </h2>
+        </div>
+
+        <!-- 3-Step Process Grid -->
+        <div class="process-grid">
+          
+          <!-- Step 1 -->
+          <div class="process-card reveal reveal-delay-1">
+            <div class="process-top-row">
+              <span>01 / TAHAP AWAL</span>
+              <span class="process-arrow">↗</span>
+            </div>
+            <div>
+              <h3 class="process-card-title">Konsultasi & Perancangan</h3>
+              <p class="process-card-desc">
+                Menganalisis kebutuhan bisnis, menentukan alur pengguna, serta merancang arsitektur sistem dan desain UI/UX yang presisi.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-card reveal reveal-delay-2">
+            <div class="process-top-row">
+              <span>02 / TAHAP PEMBANGUNAN</span>
+              <span class="process-arrow">↗</span>
+            </div>
+            <div>
+              <h3 class="process-card-title">Development & Beta Release</h3>
+              <p class="process-card-desc">
+                Membangun modul sistem, integrasi database & API, serta merilis versi Beta fungsional untuk direview dan diuji bersama klien.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-card reveal reveal-delay-3">
+            <div class="process-top-row">
+              <span>03 / TAHAP PELUNCURAN</span>
+              <span class="process-arrow">↗</span>
+            </div>
+            <div>
+              <h3 class="process-card-title">Final Handover & Maintenance</h3>
+              <p class="process-card-desc">
+                Serah terima produk utuh, pelatihan operasional, serta pemeliharaan berkala dengan jaminan keandalan sistem tanpa kompromi.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SLA & Timeline Highlight Banner -->
+        <div class="sla-highlight-box reveal">
+          <div class="sla-stat-item">
+            <div class="sla-badge-tag">
+              <span>WAKTU PENGEMBANGAN MVP</span>
+            </div>
+            <div class="sla-main-text">2 Minggu hingga 1 Bulan</div>
+            <p class="sla-sub-desc">
+              Untuk Minimum Viable Product (MVP) kelas enterprise yang siap diluncurkan dan diuji pasar secara cepat.
+            </p>
+          </div>
+
+          <div class="sla-stat-item">
+            <div class="sla-badge-tag">
+              <span>JAMINAN SISTEM & MAINTENANCE</span>
+            </div>
+            <div class="sla-main-text">SLA 99% Uptime Guarantee</div>
+            <p class="sla-sub-desc">
+              Satvhika tidak hanya membangun lalu pergi. Kami menyediakan kontrak maintenance pasca-peluncuran dan dukungan teknis berkelanjutan.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         04 / SKEMA PEMBAYARAN (PAYMENT MILESTONES - LIGHT SECTION)
+         ========================================================================== -->
+    <section class="section pembayaran-section" id="pembayaran">
+      <div class="container">
+        
+        <!-- Header -->
+        <div class="pembayaran-header reveal">
+          <span class="section-tag">04 / Skema Pembayaran</span>
+          <h2 class="section-heading-serif">
+            Transparansi penuh berbasis pencapaian (milestone-based).
+          </h2>
+        </div>
+
+        <!-- Payment Milestones Grid -->
+        <div class="payment-milestones-grid">
+          
+          <div class="milestone-card reveal reveal-delay-1">
+            <div>
+              <div class="milestone-percent">30%</div>
+              <div class="milestone-phase">Tahap 1 · Down Payment</div>
+              <p class="milestone-desc">
+                Dibayarkan di awal proyek untuk memulai tahap konsultasi mendalam, riset arsitektur teknis, dan perancangan UI/UX.
+              </p>
+            </div>
+          </div>
+
+          <div class="milestone-card reveal reveal-delay-2">
+            <div>
+              <div class="milestone-percent">30%</div>
+              <div class="milestone-phase">Tahap 2 · Beta Release</div>
+              <p class="milestone-desc">
+                Dibayarkan saat versi awal produk selesai dibangun secara fungsional dan siap diuji coba langsung oleh tim klien.
+              </p>
+            </div>
+          </div>
+
+          <div class="milestone-card reveal reveal-delay-3">
+            <div>
+              <div class="milestone-percent">40%</div>
+              <div class="milestone-phase">Tahap 3 · Final Handover</div>
+              <p class="milestone-desc">
+                Dibayarkan pada serah terima produk final setelah seluruh revisi selesai dan sistem siap dideploy ke server produksi.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         05 / FILOSOFI SATVHIKA
+         ========================================================================== -->
+    <section class="section filosofi-section" id="prinsip">
+      <div class="container">
+        <span class="filosofi-tag reveal">FILOSOFI PERUSAHAAN SATVHIKA</span>
+        
+        <blockquote class="filosofi-quote reveal reveal-delay-1">
+          Pertumbuhan finansial dan bisnis yang berkelanjutan lewat teknologi digital, layaknya pohon yang berakar kuat dan terus bertumbuh memberikan nilai nyata.
+        </blockquote>
+
+        <div class="filosofi-footer-meta reveal reveal-delay-2">
+          <span>SATVHIKA / DIGITAL PRODUCT & SAAS COMPANY</span>
+          <span>BALI · INDONESIA · 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         06 / FAQ SECTION (FREQUENTLY ASKED QUESTIONS)
+         ========================================================================== -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        
+        <div class="faq-header reveal">
+          <span class="section-tag" style="margin-bottom: 1rem;">06 / Tanya Jawab</span>
+          <h2 class="section-heading-serif">Pertanyaan yang Sering Diajukan</h2>
+        </div>
+
+        <div class="faq-list reveal reveal-delay-1">
+          
+          <!-- Q1 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Apa itu Satvhika?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Satvhika adalah perusahaan teknologi digital yang bergerak di bidang pembuatan website, sistem SaaS (Software as a Service), Point of Sales (POS), E-Commerce, monetisasi website, integrasi AI, serta layanan pendukung digitalisasi bisnis bagi UMKM, profesional, kreator, dan momen personal.
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Berapa lama waktu pengembangan software atau sistem SaaS di Satvhika?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Umumnya waktu pengembangan berkisar antara 2 minggu hingga 1 bulan untuk Minimum Viable Product (MVP) kelas enterprise. Waktu pengerjaan dapat disesuaikan tergantung pada skala dan kompleksitas integrasi fitur yang disepakati.
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Apakah Satvhika menyediakan layanan maintenance setelah produk selesai?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Ya, Satvhika tidak hanya membangun lalu pergi. Kami menyediakan kontrak layanan pemeliharaan (maintenance) pasca-peluncuran dengan garansi SLA 99% Uptime, pemantauan sistem, perbaikan bug rutin, dan dukungan teknis berkelanjutan.
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Bagaimana skema pembayaran proyek di Satvhika?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Pembayaran dibagi ke dalam beberapa termin berbasis pencapaian (milestone-based) dengan transparansi penuh: 30% Down Payment di awal, 30% saat Beta Release siap diuji, dan 40% saat Final Handover selesai.
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Siapa saja target pasar yang dilayani oleh Satvhika?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Kami melayani UMKM dan profesional (sistem POS, E-Commerce, monetisasi, dan company profile), kreator dan freelancer (website portofolio mandiri tanpa coding), serta individu umum (undangan pernikahan & acara digital interaktif).
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Apa saja layanan utama yang disediakan oleh Satvhika?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Enam layanan utama kami meliputi: (1) E-Commerce System, (2) Point of Sales (POS) System, (3) Monetisasi Website & SEO, (4) AI Integration, (5) Online Invitation (Undangan Digital), dan (6) Company Profile & Custom Portfolio Website.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         07 / MULAI PROYEK & FOOTER (LIGHT SECTION)
+         ========================================================================== -->
+    <footer class="footer-section" id="kontak">
+      <div class="container">
+        
+        <!-- Top Prompt Row -->
+        <div class="footer-top-meta reveal">
+          <span class="footer-section-tag">07 / MULAI PROYEK</span>
+          <p class="footer-sub-prompt">
+            Punya ide produk baru, butuh sistem POS/E-commerce, integrasi AI, atau undangan digital untuk momen spesial Anda?
+          </p>
+        </div>
+
+        <!-- Big Heading -->
+        <h2 class="footer-main-title reveal reveal-delay-1">
+          Mari membangun solusi digital yang berdaya guna dan siap berkembang bersama Satvhika.
+        </h2>
+
+        <!-- Action Email Button -->
+        <div class="footer-cta-container reveal reveal-delay-2">
+          <button class="btn btn-pill-dark copy-email-action btn-full-mobile" title="Klik untuk menyalin alamat email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <span>hello@satvhika.com</span>
+          </button>
+        </div>
+
+        <!-- Bottom Bar Info -->
+        <div class="footer-bottom-bar reveal">
+          <span>© 2026 SATVHIKA. ALL RIGHTS RESERVED.</span>
+          
+          <div class="live-time-indicator">
+            <span class="live-time-dot"></span>
+            <span id="bali-live-time">WITA / GMT+8</span>
+          </div>
+        </div>
+
+        <!-- Massive Brand Typography Watermark -->
+        <div class="footer-giant-watermark reveal" aria-hidden="true">
+          SATVHIKA
+        </div>
+
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ==========================================================================
+       CASE STUDY DETAIL MODAL (NATIVE BOTTOM SHEET / MODAL)
+       ========================================================================== -->
+  <div class="modal-overlay" id="case-study-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <span class="status-pill modal-header-pill">Case Study Preview</span>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Tutup Detail">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-dynamic-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span class="toast-text">Email berhasil disalin ke clipboard!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/clock.js?v=5.1"></script>
+  <script src="js/app.js?v=5.1"></script>
+  <script src="js/scroll-canvas.js?v=5.1"></script>
+</body>
+</html>
