@@ -257,6 +257,42 @@ const CASE_STUDIES = {
       { label: 'Konfigurasi LLM', value: 'No-Code Setup' }
     ],
     tech: ['Multi-Agent Architecture', 'Visual LLM Configurator', 'RAG Document Parser', 'API Integration Bridge', 'Tool Calling UI']
+  },
+  seken_scan: {
+    title: 'Seken / Scan — iPhone Second Inspection & Diagnostic Suite',
+    tag: 'Hardware Inspection & Mobile Diagnostic Tool · 2026',
+    subtitle: 'Aplikasi web panduan mandiri inspeksi iPhone second bertahap untuk mendeteksi rekondisi bodi, layar tiruan, status part iOS, dan keabsahan garansi resmi saat transaksi COD.',
+    overview: 'Seken / Scan adalah web application diagnostik cerdas yang dirancang khusus untuk melindungi pembeli iPhone second dari risiko unit rekondisi, part kanibalan non-resmi, hingga masalah blokir sinyal IMEI saat transaksi COD (Cash on Delivery). Pengguna dapat memilih model iPhone spesifik (dari seri klasik hingga flagship terbaru iPhone 17 Pro Max), dan sistem secara adaptif memuat parameter hardware unik tipe tersebut — mulai dari kode model A-series, material sasis (Titanium Grade 5 vs Aluminium Anodized), sensor Camera Control, hingga indikator riwayat servis iOS. Sistem memandu pembeli melewati 4 tahap inspeksi terarah di lapangan dengan checklist status real-time (Aman / Masalah / Belum).',
+    gallery: [
+      {
+        src: 'assets/projects/seken-scan/seken-scan-hero.png',
+        title: '01. Beranda & Standar Pemeriksaan Unit COD',
+        desc: 'Hero interface dengan pesan edukasi "Jangan Beli iPhone Bekas Hanya dari Tampilannya", ringkasan 3 pilar inspeksi utama (Deteksi Bongkar, Layar & True Tone, Garansi PA/A), serta estimasi waktu pemeriksaan (±7 menit).'
+      },
+      {
+        src: 'assets/projects/seken-scan/seken-scan-models.png',
+        title: '02. Tahap 1: Seleksi Model iPhone Adaptif',
+        desc: 'Katalog interaktif pemilihan model iPhone dari seri X/SE hingga iPhone 17 Pro Max dengan filter seri instan, pencarian model cepat, dan badge hardware spesifik per perangkat (chipset, material bodi, modul kamera).'
+      },
+      {
+        src: 'assets/projects/seken-scan/seken-scan-specs.png',
+        title: '03. Panduan Teknis & Urutan 4 Tahap Diagnostik',
+        desc: 'Ringkasan spesifikasi teknis unit terpilih, catatan kritis titik rawan servis dari data lapangan, serta navigasi 4 tahap diagnostik (Body & Fisik, Kamera, Nomor Model, Layar) hingga ringkasan akhir.'
+      },
+      {
+        src: 'assets/projects/seken-scan/seken-scan-checklist.png',
+        title: '04. Checklist Pemeriksaan Fisik & Komponen Kritis',
+        desc: 'Checklist interaktif di lapangan untuk mengecek kerataan sasis aluminium, dua baut pentalobe bawah (deteksi bekas bongkar teknisi), port USB-C 3.0 (10 Gbps), haptic Action Button, dan sensor Camera Control dengan status verifikasi langsung.'
+      }
+    ],
+    challenge: 'Membeli iPhone second saat transaksi COD memiliki risiko penipuan tinggi: fisik tampak mulus namun komponen telah ditukar, layar tiruan tanpa True Tone, dua baut pentalobe lecet bekas obeng teknisi, atau unit inter ilegal yang rentan blokir sinyal.',
+    solution: 'Membangun aplikasi panduan diagnostik lapangan berbasis web yang ultra-responsif di smartphone pembeli tanpa install aplikasi. Sistem mengotomatisasi checklist parameter sesuai tipe iPhone target dengan instruksi visual cara mendeteksi tanda-tanda rekondisi secara presisi.',
+    metrics: [
+      { label: 'Urutan Diagnostik', value: '4 Tahap Terarah' },
+      { label: 'Poin Pemeriksaan', value: '24+ Cek Fisik' },
+      { label: 'Database Model', value: 'iPhone X s/d 17 Pro' }
+    ],
+    tech: ['Dynamic Model Architecture', 'Hardware-Adaptive Checklist', 'Apple-Inspired UI System', 'Zero-Install Web App', 'Interactive Inspection Engine']
   }
 };
 
